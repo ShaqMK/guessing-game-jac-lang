@@ -15,7 +15,7 @@ obj GuessTheNumberGame (Game) {
 
     def play {
         while self.attempts > 0 {
-            guess = input("Guess a number between 1 and 10");
+            guess = input("Guess a number between 1 and 10: ");
             if guess.isdigit() {
                 self.process_guess(int(guess));
                 if self.won {
@@ -41,7 +41,7 @@ obj GuessTheNumberGame (Game) {
             return;
         }
         self.attempts -= 1;
-        print("You have {self.attempts} attempts left.");
+        print(f"You have {self.attempts} attempts left.");
     }
 }
 
