@@ -9,7 +9,7 @@ obj Game {
 }
 
 obj GuessTheNumberGame(Game) {
-    has correct_number: int = random.rnadint(1, 10);
+    has correct_number: int = random.randint(1, 10);
 
     def init;
     override def play;
